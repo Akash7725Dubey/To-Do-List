@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
-    <link rel="stylesheet"  href="style.css">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-   <div id="back">
-    <h1>My To Do App</h1>
-    
-    <div id="ToDo">
-    <input>
-    <br />
-    <button >Add Task</button>
+    <div class="Container">
+           <div class="todo-app">
+            <h2>To-Do List<img src="./Images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">    //Input box
+                 <button onclick="addTask()">Add</button>              //addTask() function
+            </div>
+            <ul id="list-Container">             //list Container
+                 <!-- <li class="checked">Task1</li> 
+                <li>Task2</li> 
+                 <li>Task3</li>  -->
+            </ul>
+           </div>
     </div>
-</div>
-<script src="index.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
